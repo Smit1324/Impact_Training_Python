@@ -57,7 +57,7 @@
 
 # We can suspend the execution of thread by using sleep() method or join() method of time module.
 # sleep() method is used to suspend the execution of current thread for a specific time. It is defined in time module.
-# join() method is used to suspend the execution of current thread until the completion of another thread.
+# join() method is used to suspend the execution of current thread until the completion of another thread. It is defined in thread class.
 
 # import time
 # for p in range(1,6):
@@ -79,3 +79,48 @@
 # t2=y()
 # t1.start()
 # t2.start()
+
+# import time
+# import threading
+# class x(threading.Thread):
+#     def run(self):
+#         time.sleep(5)
+#         for p in range(1,101):
+#             print(p)
+# class y(threading.Thread):
+#     def run(self):
+#         for p in range(101,201):
+#             print(p)
+# t1=x()
+# t2=y()
+# t1.start()
+# t2.start()
+
+# import time
+# import threading
+# class x(threading.Thread):
+#     def run(self):
+#         for p in range(1,6):
+#             print("JAI SIYA RAM")
+#             time.sleep(2)
+# t1=x()
+# t1.start()
+# t1.join(5)
+# for p in range(1,6):
+#     print("RAMA RAMA")
+
+import time
+import threading
+class x(threading.Thread):
+    def run(self):
+        s=0
+        time.sleep(5)
+        for p in range(1,100):
+            s+=p
+        print(s)
+t1=x()
+t1.start()
+for p in range(101,201):
+    print(p)
+    if p==150:
+        t1.join()
