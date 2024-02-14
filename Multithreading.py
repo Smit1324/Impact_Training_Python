@@ -109,18 +109,18 @@
 # for p in range(1,6):
 #     print("RAMA RAMA")
 
-import time
-import threading
-class x(threading.Thread):
-    def run(self):
-        s=0
-        time.sleep(5)
-        for p in range(1,100):
-            s+=p
-        print(s)
-t1=x()
-t1.start()
-for p in range(101,201):
-    print(p)
-    if p==150:
-        t1.join()
+# import time
+# import threading
+# class x(threading.Thread):
+#     def run(self):
+#         s=0
+#         time.sleep(5)
+#         for p in range(1,100):
+#             s+=p
+#         print(s)
+# t1=x()
+# t1.start()
+# for p in range(101,201):
+#     print(p)
+#     if p==150:
+#         t1.join()
