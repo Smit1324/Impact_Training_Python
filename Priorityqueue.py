@@ -1,8 +1,4 @@
-# 16-02-24:-
-# ---------------
-
-# Priority Queue:-
-# -----------------
+# Priority Queue
 
 # -> Priority Queue is similar to queue operation. 
 # -> In priority queue we can assign the priority according to the priority elements gets deleted.
