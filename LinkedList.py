@@ -617,97 +617,97 @@
 # l1.display()
 
 
-class Node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class cll:
-    def __init__(self):
-        self.head=None
-        self.tail=None
-    def display(self):
-        if(self.head is None):
-            print("EMPTY")
-        else:
-            temp=self.head
-            while(True):
-                print(temp.data,end="--->")
-                temp=temp.next
-                if(temp==self.head):
-                    break
-            print(temp.data)
-    def node_beg(self,data):
-        temp=self.head
-        nb=Node(data)
-        self.head=nb
-        nb.next=temp
-        self.tail.next=nb
-    def node_end(self,data):
-        temp=self.head
-        ne=Node(data)
-        self.tail.next=ne
-        self.tail=ne
-        self.tail.next=temp
-    def node_pos(self,data,pos):
-        np=Node(data)
-        temp=self.head
-        for i in range(1,pos):
-            temp=temp.next
-        np.next=temp.next
-        temp.next=np
-    def rdisplay(self):
-        prev=self.tail
-        curr=self.head
-        while(True):
-            next=curr.next
-            curr.next=prev
-            prev=curr
-            curr=next
-            if (curr==self.head):
-                break
-        self.tail=self.head
-        self.head=prev 
-    def del_beg(self):
-        temp=self.head
-        self.head=temp.next
-        self.tail.next=self.head
-    def del_end(self):
-        temp=self.head
-        while(temp.next.next!=self.head):
-            temp=temp.next
-        temp.next=self.head
-        self.tail=temp
-    def del_pos(self,pos):
-        temp=self.head
-        for i in range(1,pos-1):
-            temp=temp.next
-        temp.next=temp.next.next
+# class Node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class cll:
+#     def __init__(self):
+#         self.head=None
+#         self.tail=None
+#     def display(self):
+#         if(self.head is None):
+#             print("EMPTY")
+#         else:
+#             temp=self.head
+#             while(True):
+#                 print(temp.data,end="--->")
+#                 temp=temp.next
+#                 if(temp==self.head):
+#                     break
+#             print(temp.data)
+#     def node_beg(self,data):
+#         temp=self.head
+#         nb=Node(data)
+#         self.head=nb
+#         nb.next=temp
+#         self.tail.next=nb
+#     def node_end(self,data):
+#         temp=self.head
+#         ne=Node(data)
+#         self.tail.next=ne
+#         self.tail=ne
+#         self.tail.next=temp
+#     def node_pos(self,data,pos):
+#         np=Node(data)
+#         temp=self.head
+#         for i in range(1,pos):
+#             temp=temp.next
+#         np.next=temp.next
+#         temp.next=np
+#     def rdisplay(self):
+#         prev=self.tail
+#         curr=self.head
+#         while(True):
+#             next=curr.next
+#             curr.next=prev
+#             prev=curr
+#             curr=next
+#             if (curr==self.head):
+#                 break
+#         self.tail=self.head
+#         self.head=prev 
+#     def del_beg(self):
+#         temp=self.head
+#         self.head=temp.next
+#         self.tail.next=self.head
+#     def del_end(self):
+#         temp=self.head
+#         while(temp.next.next!=self.head):
+#             temp=temp.next
+#         temp.next=self.head
+#         self.tail=temp
+#     def del_pos(self,pos):
+#         temp=self.head
+#         for i in range(1,pos-1):
+#             temp=temp.next
+#         temp.next=temp.next.next
 
-l1=cll()
-n1=Node(10)
-l1.head=n1
-l1.tail=n1
-l1.tail.next=l1.head
-n2=Node(20)
-l1.tail.next=n2
-l1.tail=n2
-l1.tail.next=l1.head
-n3=Node(30)
-l1.tail.next=n3
-l1.tail=n3
-l1.tail.next=l1.head
-n4=Node(40)
-l1.tail.next=n4
-l1.tail=n4
-l1.tail.next=l1.head
-# l1.rdisplay()
-# l1.node_beg(50)
-# l1.node_end(50)
-# l1.node_pos(60,2)
-# l1.del_beg()
-# l1.del_end()
-# l1.del_pos(3)
-l1.display()
+# l1=cll()
+# n1=Node(10)
+# l1.head=n1
+# l1.tail=n1
+# l1.tail.next=l1.head
+# n2=Node(20)
+# l1.tail.next=n2
+# l1.tail=n2
+# l1.tail.next=l1.head
+# n3=Node(30)
+# l1.tail.next=n3
+# l1.tail=n3
+# l1.tail.next=l1.head
+# n4=Node(40)
+# l1.tail.next=n4
+# l1.tail=n4
+# l1.tail.next=l1.head
+# # l1.rdisplay()
+# # l1.node_beg(50)
+# # l1.node_end(50)
+# # l1.node_pos(60,2)
+# # l1.del_beg()
+# # l1.del_end()
+# # l1.del_pos(3)
+# l1.display()
 
 
 # -------------------------------------------------------------BREAK---------------------------------------------
