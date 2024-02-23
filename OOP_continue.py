@@ -20,21 +20,21 @@
 #             Object is an instance of a class i.e., by creating objects, memory will be alloted for the data members of a class
 #             When class is created memory will be alloted for the static variables and static methods.
 #             When object is created, memory will be alloted for the non static variables and non static methods.
-                # Static Variable : 
-                                # The variables which are declared within a class but outside of all the methods, those variables are called Static variables.
-                                # We can access static variables within a class by using the classname and outside of a class by using the classname and object name.
-                                # If the data is common to all objects, then we can declare those variables as Static variables.
-                                # For static variables, memory is alloted when the class is loaded
-                # Non Static Variable : 
-                                # The variables which are declared within a class and within a methods, those variables are called Non Static variables.
-                                # We can acess a non static variable within a class using self keyword and outside of a class using by using object name.
-                                # If the data change from object to object, we can declare the variable as Non Static variable.
-                # Non Static Method : 
-                                # We can access the non static method by using object name.
-                                # For non static method, memory is alloted when an object is created.
-                # Static Method :
-                                # We can access the static method by using class name.
-                                # No object creation is required
+#                 Static Variable : 
+#                                 The variables which are declared within a class but outside of all the methods, those variables are called Static variables.
+#                                 We can access static variables within a class by using the classname and outside of a class by using the classname and object name.
+#                                 If the data is common to all objects, then we can declare those variables as Static variables.
+#                                 For static variables, memory is alloted when the class is loaded
+#                 Non Static Variable : 
+#                                 The variables which are declared within a class and within a methods, those variables are called Non Static variables.
+#                                 We can acess a non static variable within a class using self keyword and outside of a class using by using object name.
+#                                 If the data change from object to object, we can declare the variable as Non Static variable.
+#                 Non Static Method : 
+#                                 We can access the non static method by using object name.
+#                                 For non static method, memory is alloted when an object is created.
+#                 Static Method :
+#                                 We can access the static method by using class name.
+#                                 No object creation is required
 #     Encapsulation
 #     Inheritance
 #     Polymorphism
@@ -269,7 +269,7 @@
 
 # We can use the properties of one class inside another class in two ways
 #   1) has a relationship
-#   1) in a relationship (inheritance)
+#   2) in a relationship (inheritance)
 
 # The concept of using the properties of one class into another class by using the class name are reference variable name is know as "has a relationship"
 
@@ -515,7 +515,7 @@
 # Python supports, two types of arbitary parameter.
 #     1) single star arbitary parameter is consider as tuple
 #     2) Multi star arbitary parameter is consider as dictionary
-# 
+
 # def d(*a):
 #     print(a)
 #     print(sum(a))
@@ -671,7 +671,7 @@
 
 # Non-abstract Method
 
-# The method which contains implementation part, the corresponding methodis known as non-abstract method
+# The method which contains implementation part, the corresponding method is known as non-abstract method
 
 # INTERFACE
 
@@ -864,7 +864,7 @@
 # e1=employee("Smit",145,100000,"Web-Dev")
 # e1.display()
 
-#---------------------------------------------------BREAK--------------------------------------------------------#---------------------------------------------------BREAK--------------------------------------------------------
+# ---------------------------------------------------BREAK--------------------------------------------------------#---------------------------------------------------BREAK--------------------------------------------------------
 
 
 # def append_numbers(start, end, result=[]):
