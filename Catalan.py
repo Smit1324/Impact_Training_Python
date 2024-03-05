@@ -44,6 +44,14 @@
 
 # n=int(input())
 # l=list(map(int,input().split()))[:n]
-# for i in range(1,n+1):
+# for i in range(l[0],l[0]+n+1):
 #     if i not in l:
 #         print(i)
+
+# n=int(input())
+# l=list(map(int,input().split()))[:n]
+# r=0
+# for i in l:
+#     if l.count(i) ==1:
+#         r=i
+# print(r)
