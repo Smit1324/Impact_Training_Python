@@ -40,3 +40,10 @@
 # # catalan[4]=catalan[4]+catalan[2]*catalan[1]=7+2*1=9
 # # catalan[4]=catalan[4]+catalan[3]*catalan[0]=9+5*1=14
 # # catalan[4]=14
+
+
+n=int(input())
+l=list(map(int,input().split()))[:n]
+for i in range(1,n+1)
+    if i not in l:
+        print(i)
