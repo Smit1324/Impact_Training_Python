@@ -96,3 +96,59 @@
 
 # arr = [10, 22, 9, 33, 21, 50, 41, 60]
 # print("Length of lis is", lis(arr))
+
+
+# HASH MAP, HASH SET, HASH TABLE & HASH FUNCTION
+
+# Hash Set is a collection of objects.
+
+# In Hash Table, data was stored in the form of key & value pair.
+# Hash Set internally uses Hash Table to store the elements.
+# Just like the Set, Hash Set also don't allow duplicate elements.
+
+# Hash Map & Hash Table are the same things i.e., the way of storing and organising information.
+# Hash Map and Hash Table are implemented by dictionary in python.
+# Hash Map are in key and value pair.
+
+# Hash Function is a function that accepts a string and returns a number.
+# Hashing is a technique used in computer science to store and retrieve data efficiently.
+# It involves converting data into pixel sixed values called hash codes.
+# This hash codes are used as indexes through store the data in data structure like hash maps, hash tables, hash sets etc.
+
+# hash_set=set()
+# print(type(hash_set))
+# hash_set.add(1)
+# hash_set.add(2)
+# hash_set.add(3)
+# hash_set.add(4)
+# hash_set.add(5)
+# print(hash_set)
+# search_ele=2
+# if search_ele in hash_set:
+#     print(f"{search_ele} is present in the hash set")
+# else:
+#     print(f"{search_ele} is not present in the hash set")
+
+# hash_map={}
+# hash_map["Name"]="Virat Kohli"
+# hash_map["DOB"]="Nov-5"
+# hash_map["Runs"]=650
+# hash_map["Wickets"]=1
+# hash_map["Team"]="India"
+# print(hash_map)
+# for i in hash_map.keys():
+#     print(i)
+# for i in hash_map.values():
+#     print(i)
+# print(hash_map["Runs"])
+
+# st=input()
+# l=list(st)
+# s=""
+# for i in range(len(l)):
+#     if i!=len(l)-1:
+#         if l[i]!=l[i+1]:
+#             s=s+l[i]
+#     else:
+#         s=s+l[i]
+# print(s)
